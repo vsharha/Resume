@@ -126,7 +126,7 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {University of Edinburgh}{Edinburgh, Scotland}
-{Bachelor of Engineering in Computer Science}{Sept. 2024 -- Expected Graduation: May 2028}
+{BEng Computer Science}{Sept. 2024 -- Expected Graduation: May 2028}
 % \resumeItemListStart
 % \resumeItem{Introduction to Computation}
 % \resumeItem{Introduction to Linear Algebra}
@@ -142,24 +142,25 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Standard Life (part of Phoenix Group)}{June 2024 -- July 2024}
-{Career Ready Internship}{Edinburgh, Scotland}
-\resumeItemListStart
-\resumeItem{Curated questions for a market research study}
-\resumeItem{Explored data visualisation techniques using Excel to identify insights}
-\resumeItem{Selected suitable new content for an app}
-% \resumeItem{Contributed to making a presentation of the findings}
-\resumeItem{Presented to a group of potential future users}
-\resumeItemListEnd
-
-\resumeSubheading
 {VDrive Chip, Key \& Diagnostics}{June 2025 -- Present}
 {Car Electrician/Mechanic Business}{Edinburgh, Scotland}
 \resumeItemListStart
 \resumeItem{Established complete business infrastructure from incorporation through operational launch, including HMRC registration, banking setup, and accounting system implementation}
 \resumeItem{Developed comprehensive brand identity, custom website with integrated booking systems, and multi-platform digital presence}
-\resumeItem{Engineered innovative data extraction solution to recover 6+ months of historical financial records from e-commerce platforms lacking bulk export functionality}
+\resumeItem{Recovered 6+ months of historical financial records by engineering a custom extraction tool, enabling accurate financial reporting}
 \resumeItemListEnd
+
+\resumeSubheading
+{Standard Life}{June 2024 -- July 2024}
+{Career Ready Internship}{Edinburgh, Scotland}
+\resumeItemListStart
+\resumeItem{Curated questions for a market research study}
+\resumeItem{Produced data visualizations that highlighted trends for internal market research}
+\resumeItem{Selected suitable new content for an app}
+% \resumeItem{Contributed to making a presentation of the findings}
+\resumeItem{Presented to a group of potential future users}
+\resumeItemListEnd
+
 
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
@@ -177,7 +178,25 @@
 \section{Personal Projects}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{AI Expense Pipeline} $|$ \emph{Python, OpenAI-compatible AI handlers}}{July 2025}{An automated invoice and receipt processing pipeline with configurable AI-driven extraction}
+{\textbf{\href{https://github.com/vsharha/WordsFrequency-POS}{\underline{WordsFrequency-POS}}} $|$ \emph{Python, Bash, Data Pipelines}}{September 2025}{Cross-lingual frequency + POS dataset pipeline with normalized outputs and reproducible automation}
+\resumeItemListStart
+\resumeItem{Created an automated ETL pipeline to merge multilingual word-frequency and POS datasets, enabling downstream NLP research and analysis (Python, Bash).}
+\resumeItem{Merged word-frequency with part-of-speech/morphology to enable queries by POS ordered by frequency for downstream NLP tasks.}
+\resumeItem{Automated end-to-end runs with CLI scripts and env-based config; implemented idempotent downloads and resume-safe processing.}
+\resumeItem{Produced reproducible, versionable artifacts suitable for batch processing and programmatic consumption.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/vsharha/Wordle-plus-plus}{\underline{Wordle++}}} $|$ \emph{React, Redux Toolkit, Tailwind CSS, Vite}}{September 2025}{React word game with custom hooks, animations, theming, and responsive UI}
+\resumeItemListStart
+\resumeItem{Built a Wordle-style game with responsive UI and animations, applying React, Redux Toolkit, and TailwindCSS for state management and design.}
+\resumeItem{Centralized game state with Redux Toolkit and react\-redux for guess lifecycle, validation, and keyboard state; ensured predictable updates and testable logic.}
+\resumeItem{Built responsive, mobile\-first layouts with Tailwind CSS; adaptive grid and on\-screen keyboard optimized for desktop and touch devices.}
+\resumeItem{Structured reusable components and modern tooling with Vite and ESLint for fast dev builds, clean code, and maintainability.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AI Expense Pipeline} $|$ \emph{Python, OpenAI-compatible AI handlers}}{August 2025}{An automated invoice and receipt processing pipeline with configurable AI-driven extraction}
 \resumeItemListStart
 \resumeItem{Built a modular pipeline to ingest PDF invoices/receipts, normalize inputs with OCR, and extract structured expense data using AI-driven prompts.}
 \resumeItem{Designed YAML-driven configurable passes with carry-forward fields, skip logic, and post-processing rules (joins, length limits, date bounds) for robust normalization.}
@@ -186,17 +205,9 @@
 \resumeProjectHeading
 {\textbf{\href{https://github.com/vsharha/Java-Banking-System}{\underline{Banking System}}} $|$ \emph{Java}}{January 2025}{A banking application with a command-line interface}
 \resumeItemListStart
-\resumeItem{Engineered a modular Java command-line banking system.}
 \resumeItem{Implemented account registration, balance operations, and timestamped transaction history}
 \resumeItem{Applied appropriate data structures and object-oriented design patterns to ensure correctness, maintainability, and
 extensibility}
-\resumeItemListEnd
-\resumeProjectHeading
-{\textbf{\href{https://vsharha.github.io/Wordle/}{\underline{Wordle}}} $|$ \emph{JavaScript, HTML/CSS}}{September 2024}{A recreation of Wordle by NYT games}
-\resumeItemListStart
-\resumeItem{Developed a fully functional Wordle game clone using JavaScript, HTML, and CSS.}
-\resumeItem{Implemented core game logic, including word selection, guess validation, and color-coded feedback.}
-\resumeItem{Designed a user-friendly interface with intuitive keyboard input and clear visual cues.}
 \resumeItemListEnd
 % \resumeProjectHeading
 %   {\textbf{\href{https://viktorsharha.com/}{\underline{Portfolio}}} $|$ \emph{JavaScript, HTML/CSS}}{August 2024}{A personal portfolio website to showcase some of my personal projects}
@@ -207,7 +218,7 @@ extensibility}
 % \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{\href{https://github.com/vsharha/HangmanBot/}{\underline{HangmanBot}}} $|$ \emph{Python, Discord.py}}{August 2023 -- September 2023}{A Discord bot to let users play hangman together}
+{\textbf{\href{https://github.com/vsharha/HangmanBot/}{\underline{HangmanBot}}} $|$ \emph{Python, Discord.py}}{September 2023}{A Discord bot to let users play hangman together}
 \resumeItemListStart
 \resumeItem{Designed a bot to enhance user interaction across multiple Discord communities}
 \resumeItem{Implemented a variety of commands to facilitate hangman games}
@@ -220,8 +231,10 @@ extensibility}
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Languages}{: Python, Java, C++, JavaScript, HTML/CSS} \\
-         \textbf{Frameworks}{: React, Node.js, TailwindCSS} \\
+        \textbf{Languages}{: Python, Java, C++, JavaScript, Bash, HTML/CSS
+        } \\
+         \textbf{Frameworks}{: FastAPI, React, Next.js, TailwindCSS, Redux} \\
+         \textbf{Tools/Other}{: Git, Linux, OCR, OpenAI API, Cloudflare} \\
         %  \textbf{Developer Tools}{: GitHub, VS Code, PyCharm} \\
         %  \textbf{Libraries}{: Discord.py}
         }}
