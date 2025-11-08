@@ -11,7 +11,7 @@
 % Use geometry for explicit, easy-to-change margins. Replace `fullpage` + manual
 % \addtolength calls with a single geometry configuration below. Adjust `margin=` as
 % needed (e.g. 0.5in for narrower resume margins).
-\usepackage[letterpaper,top=0.4in,left=0.3in,right=0.3in,bottom=0.2in]{geometry}
+\usepackage[letterpaper,top=0.2in,left=0.2in,right=0.2in,bottom=0.2in]{geometry}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -56,8 +56,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -90,7 +90,7 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
       \textit{\small #3} & \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -100,7 +100,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,22 +152,20 @@
 
 \resumeSubheading
 {VDrive Edinburgh}{June 2025 -- Present}
-{Technical Operations Lead}{Edinburgh, Scotland}
+{Co-Founder \& Technical Operations Lead}{Edinburgh, Scotland}
 \resumeItemListStart
-\resumeItem{Co-founded and manage technology operations for automotive business, handling 50+ monthly service appointments}
-\resumeItem{Built Python automation system that processes 500+ invoices/receipts annually}
-\resumeItem{Developing "Zenparse" - commercializing the internal tool into a B2B SaaS product for small business accounting automation}
-% \resumeItem{Designed and deployed customer booking website, managing full technical infrastructure and digital presence}
+\resumeItem{Co-founded automotive service business, scaling to 50+ monthly appointments while managing all technology operations and digital infrastructure}
+\resumeItem{Built and deployed "Zenparse" - AI-powered document processing system handling 500+ invoices/receipts annually with 98\% accuracy, reducing monthly bookkeeping time by 95\% (5 hours to 15 minutes)}
+\resumeItem{Commercializing Zenparse as B2B SaaS product targeting small businesses with similar accounting automation needs}
+\resumeItem{Manage customer-facing booking platform and oversee technical infrastructure supporting daily business operations}
 \resumeItemListEnd
 
 % \resumeSubheading
 % {Standard Life}{July 2024}
-% {Intern}{Edinburgh, Scotland}
+% {Product Research Intern}{Edinburgh, Scotland}
 % \resumeItemListStart
-% \resumeItem{Designed and analyzed customer survey with 100+ parent and children respondents to identify
-%   key financial planning concerns for university-bound students, informing new FAQ
-%   content for Standard Life's mobile app}
-% \resumeItem{Recommended 5 priority FAQ topics based on survey insights, presented findings to product and design teams}
+% \resumeItem{Designed and conducted customer research survey with 100+ parent and student respondents to identify key financial planning concerns for university-bound students}
+% \resumeItem{Analyzed survey data and recommended 5 priority FAQ topics, presenting findings to product and design teams to inform Standard Life mobile app content strategy}
 % \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -187,10 +185,10 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {First Place, OpenEuler Challenge}{October 2025}
-{Won university-wide competition among 10 teams with Samantha OS Assistant}{Edinburgh, Scotland}
+{Won competitive university-wide hackathon with Samantha OS Assistant}{Edinburgh, Scotland}
 \resumeSubheading
 {Third Place, Teachathon}{October 2025}
-{Awarded for innovative educational technology solution, GradeIQ}{Edinburgh, Scotland}
+{Placed 3rd in educational technology competition with GradeIQ, an AI-powered grading platform}{Edinburgh, Scotland}
 \resumeSubHeadingListEnd
 
 
@@ -200,37 +198,37 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Optiver Trading Challenge} $|$ \emph{Python, BERT, NLP, Algorithmic Trading}}{November 2025}{Collaborative trading algorithm finishing 2nd on leaderboard at Hacktheburgh hackathon}
+{\textbf{Optiver Trading Challenge} $|$ \emph{Python, BERT, NLP, Algorithmic Trading}}{November 2025}{2nd on leaderboard at Hacktheburgh algorithmic trading competition (20+ teams)}
 \resumeItemListStart
-\resumeItem{Researched and implemented sentiment analysis component for algorithmic trading bot in team of 6 during 24-hour competition}
-\resumeItem{Evaluated multiple approaches including LLM-based and BERT models for financial sentiment scoring on news data}
-% \resumeItem{Trading algorithm held 1st place position for majority of competition before finishing 2nd on final leaderboard by small margin}
+\resumeItem{Led sentiment analysis component for trading bot in 24-hour competition (team of 6), helping secure 2nd place finish}
+\resumeItem{Implemented BERT-based model for real-time financial sentiment scoring; algorithm held 1st place for majority of competition}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{GradeIQ} $|$ \emph{Next.js, React (TanStack Query), FastAPI, Supabase, shadcn/ui}}
-{October 2025 (2-Week Sprint)}
-{AI-powered grading platform co-developed (team of 2) to automate academic assessment.}
+{\textbf{World on Fire} $|$ \emph{Next.js, React, FastAPI, Supabase, Leaflet}}
+{November 2025}
+{Real-time global news heatmap visualizing breaking news across 100+ cities (24 hour hackathon project)}
 \resumeItemListStart
-\resumeItem{Engineered a responsive Next.js frontend using TanStack Query to manage complex server state, featuring real-time status polling for background grading jobs and optimistic updates}
-\resumeItem{Built the core UI with shadcn/ui, React Hook Form, react-pdf, and TanStack Table to provide a type-safe, dynamic interface for rubric creation and bulk submission management}
-\resumeItem{Developed a FastAPI backend using `BackgroundTasks` for non-blocking AI grading; secured the full-stack app with Supabase JWT and used Claude/Gemini to grade student submissions}
+\resumeItem{Built interactive news visualization platform with real-time updates (30-second intervals) and sentiment-based heat mapping using Leaflet and React}
+\resumeItem{Developed automated news aggregation pipeline with 10-minute RSS feed ingestion, VADER sentiment analysis, and geocoding with database caching for 100+ global cities}
+\resumeItem{Architected full-stack application with FastAPI backend and Supabase PostgreSQL for article deduplication and efficient aggregation queries}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Samantha OS Assistant} $|$ \emph{Python, OpenAI API, Linux System Programming}}{October 2025}{Award-winning CLI assistant converting natural language to system commands}
+{\textbf{GradeIQ} $|$ \emph{Next.js, React, FastAPI, Supabase, Claude/Gemini AI}}
+{October 2025}
+{AI-powered grading platform automating academic assessment - 3rd place at Teachathon (2-week sprint)}
 \resumeItemListStart
-\resumeItem{Won first place in university OpenEuler Challenge among 10 competing teams with intelligent command-line assistant}
-\resumeItem{Built conversational interface that chains complex operations through natural language, handling file management, system diagnostics, and web research with safety confirmations for destructive actions}
-\resumeItem{Designed extensible agent framework with 5+ specialized tools including API integrations, featuring automatic retry mechanisms}
+\resumeItem{Co-developed full-stack platform (team of 2) enabling instructors to create custom rubrics and grade student submissions using AI, with real-time status updates for background processing jobs}
+\resumeItem{Built responsive interface with PDF viewing, bulk submission management, and dynamic rubric creation using React and shadcn/ui component library}
+\resumeItem{Implemented secure FastAPI backend with non-blocking AI grading via Claude/Gemini APIs and JWT authentication through Supabase}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Zenparse (AI Expense Pipeline)} $|$ \emph{Python, OCR, Multiple AI APIs, YAML}}{July 2025 -- Present}{Automated bookkeeping system processing an annual rate of 500+ documents for VDrive}
+{\textbf{Samantha OS Assistant} $|$ \emph{Python, OpenAI API, Linux System Programming}}{October 2025}{1st place at OpenEuler Challenge - natural language CLI assistant for Linux system operations}
 \resumeItemListStart
-\resumeItem{Achieved 95\% time reduction (5 hours to 15 minutes monthly) by engineering production pipeline that extracts structured data from invoices and receipts using OCR and AI}
-\resumeItem{Delivered 98\% accuracy on expense categorization through configurable multi-pass processing with validation rules}
-\resumeItem{Commercializing as B2B SaaS product targeting small businesses with similar accounting automation needs}
+\resumeItem{Built conversational command-line interface converting natural language to system commands, handling file management, diagnostics, and web research with safety confirmations for destructive operations}
+\resumeItem{Designed extensible agent framework with 5+ specialized tools including API integrations and automatic retry mechanisms for robust operation chaining}
 \resumeItemListEnd
 
 % \resumeProjectHeading
@@ -281,11 +279,12 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-        \textbf{Languages}{: Python, JavaScript/TypeScript, Java, C++, SQL, Bash, HTML/CSS
+        \textbf{Languages}{: Python, JavaScript/TypeScript, Go, Java, C++, SQL, Bash
         } \\
         \textbf{Frameworks \& Libraries}{: React, Next.js, FastAPI, Tailwind CSS, Redux, Supabase, JWT/Auth, BERT, NLP Libraries} \\
         \textbf{Tools \& Platforms}{: Git, Linux, Docker, REST APIs, CI/CD, Cloudflare, OpenAI/Anthropic APIs} \\
-        \textbf{Currently Learning}{: AWS, System Design, Advanced Algorithms (for technical interviews)}
+        \textbf{Web Technologies}{: HTML5, CSS3, Responsive Design, REST, WebSockets} \\
+        \textbf{Currently Learning}{: AWS, System Design, Machine Learning, Advanced Algorithms (for technical interviews)}
         % \textbf{Specializations}{: Natural Language Processing (NLP), Optical Character Recognition (OCR), Data Pipelines, Full-Stack Web Development}
         %  \textbf{Developer Tools}{: GitHub, VS Code, PyCharm} \\
         %  \textbf{Libraries}{: Discord.py}
