@@ -23,12 +23,19 @@ jobs:
               with:
                   fetch-depth: 0
 
+            - name: Cache TeX Live
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      ~/.texlive
+                      /usr/local/texlive
+                      key: texlive-${{ runner.os }}
+
             - name: Build PDF (LaTeX)
               uses: xu-cheng/latex-action@v3
               with:
                   root_file: resume.tex
                   args: -pdf -interaction=nonstopmode -halt-on-error
-                  cache: true
 
             - name: Commit resume.pdf to repo root
               if: github.event_name != 'pull_request'
