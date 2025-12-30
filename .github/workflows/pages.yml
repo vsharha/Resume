@@ -26,6 +26,7 @@ jobs:
               with:
                   root_file: resume.tex
                   args: -pdf -interaction=nonstopmode -halt-on-error
+                  cache: true
 
             - name: Prepare Pages artifact
               run: |
