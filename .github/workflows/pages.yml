@@ -29,7 +29,9 @@ jobs:
                   path: |
                       ~/.texlive
                       /usr/local/texlive
-                      key: texlive-${{ runner.os }}
+                      key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
+                      restore-keys: |
+                      texlive-${{ runner.os }}-
 
             - name: Build PDF (LaTeX)
               uses: xu-cheng/latex-action@v3
