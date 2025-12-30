@@ -23,16 +23,6 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Cache TeX Live
-              uses: actions/cache@v4
-              with:
-                  path: |
-                      ~/.texlive
-                      /usr/local/texlive
-                  key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
-                  restore-keys: |
-                      texlive-${{ runner.os }}-
-
             - name: Build PDF (LaTeX)
               uses: xu-cheng/latex-action@v3
               with:
