@@ -26,7 +26,7 @@
 }
 
 #show heading.where(level: 1): it => block(width: 100%)[
-  #set text(13pt, weight: "regular")
+  #set text(12pt, weight: "regular")
   #smallcaps(it.body)
   #v(-1em)
   #line(length: 100%, stroke: stroke(thickness: 0.4pt))
@@ -34,8 +34,12 @@
 ]
 
 #align(center)[
-  #text(size: 27pt, weight: "extrabold")[Viktor Sharha]
+  #text(size: 25pt, weight: "extrabold")[Viktor Sharha]
   #v(-2em)
+]
+
+#align(center)[
+  #text(size: 10pt)[Computer Science Student  — AI & Product Engineering]
 ]
 
 #align(center, text(9.2pt)[
@@ -59,9 +63,6 @@
   }
 ])
 
-#align(center)[
-  #text(size: 9pt)[Computer Science Student | AI & Product Engineering]
-]
 
 #custom-title("Education")[
   #education-heading(
