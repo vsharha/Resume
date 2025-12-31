@@ -7,21 +7,25 @@
 #let linkedin = "vsharha"
 #let personal-site = "viktorsharha.com"
 
-#show: resume.with(
-  top-margin: 0.2in,
-  bottom-margin: 0.2in,
-  left-margin: 0.2in,
-  right-margin: 0.2in,
-  personal-info-font-size: 9.2pt,
-  author-position: center,
-  personal-info-position: center,
-  author-name: "",
-  phone: "",
-  email: "",
-  website: "",
-  linkedin-user-id: "",
-  github-username: ""
+#set page(
+  paper: "a4",
+  margin: (top: 0.2in, bottom: 0.2in, left: 0.2in, right: 0.2in)
 )
+
+#set text(
+  font: "New Computer Modern",
+  size: 11pt,
+  lang: "en",
+  ligatures: false
+)
+
+#show heading.where(level: 1): it => block(width: 100%)[
+  #set text(13pt, weight: "regular")
+  #smallcaps(it.body)
+  #v(-1em)
+  #line(length: 100%, stroke: stroke(thickness: 0.4pt))
+  #v(-0.2em)
+]
 
 #align(center)[
   #text(size: 27pt, weight: "extrabold")[Viktor Sharha]
