@@ -19,6 +19,12 @@
   ligatures: false
 )
 
+#let custom-title(title, body) = {
+  [= #title]
+  pad(left: 0.15in)[#body]
+  v(-0.5em)
+}
+
 #show heading.where(level: 1): it => block(width: 100%)[
   #set text(13pt, weight: "regular")
   #smallcaps(it.body)
@@ -84,28 +90,46 @@
 ]
 
 #custom-title("Awards & Achievements")[
-  #work-heading(
-    "First Place, OpenEuler Challenge",
-    "Won competitive university-wide hackathon with Samantha OS Assistant",
-    "Edinburgh, Scotland",
-    datetime(year: 2025, month: 10, day: 1),
-    datetime(year: 2025, month: 10, day: 1)
-  )[]
+  #block[
+    #grid(
+      columns: (1fr, 1fr),
+      align(left)[*First Place, OpenEuler Challenge*],
+      align(right)[*October 2025*]
+    )
+    #v(-0.2em)
+    #grid(
+      columns: (1fr, 1fr),
+      align(left)[Won competitive university-wide hackathon with Samantha OS Assistant],
+      align(right)[_Edinburgh, Scotland_]
+    )
+    #v(-0.2em)
+  ]
 
-  #work-heading(
-    "Third Place, Teachathon",
-    "Placed 3rd in educational technology competition with GradeIQ, an AI-powered grading platform",
-    "Edinburgh, Scotland",
-    datetime(year: 2025, month: 10, day: 1),
-    datetime(year: 2025, month: 10, day: 1)
-  )[]
+  #block[
+    #grid(
+      columns: (1fr, 1fr),
+      align(left)[*Third Place, Teachathon*],
+      align(right)[*October 2025*]
+    )
+    #v(-0.2em)
+    #grid(
+      columns: (1fr, 1fr),
+      align(left)[Placed 3rd in educational technology competition with GradeIQ, an AI-powered grading platform],
+      align(right)[_Edinburgh, Scotland_]
+    )
+    #v(-0.2em)
+  ]
 ]
 
 #custom-title("Technical Projects")[
   #block[
-    *Optiver Trading Challenge* | #emph[Python, BERT, NLP, Algorithmic Trading]
+    #grid(
+      columns: (1fr, auto),
+      align(left)[*Optiver Trading Challenge* | #emph[Python, BERT, NLP, Algorithmic Trading]],
+      align(right)[November 2025]
+    )
     #v(-0.2em)
-    _2nd on leaderboard at Hacktheburgh algorithmic trading competition (30+ teams)_ #h(1fr) November 2025
+    _2nd on leaderboard at Hacktheburgh algorithmic trading competition (30+ teams)_
     #v(-0.4em)
     #set par(leading: 0.6em)
     #set list(indent: 0.5em)
@@ -114,9 +138,13 @@
   ]
 
   #block[
-    *World on Fire* | #emph[Next.js, React, FastAPI, Supabase, Leaflet]
+    #grid(
+      columns: (1fr, auto),
+      align(left)[*World on Fire* | #emph[Next.js, React, FastAPI, Supabase, Leaflet]],
+      align(right)[November 2025]
+    )
     #v(-0.2em)
-    _Real-time global news heatmap visualizing breaking news across 100+ cities (24 hour hackathon project)_ #h(1fr) November 2025
+    _Real-time global news heatmap visualizing breaking news across 100+ cities (24 hour hackathon project)_
     #v(-0.4em)
     #set par(leading: 0.6em)
     #set list(indent: 0.5em)
@@ -126,9 +154,13 @@
   ]
 
   #block[
-    *GradeIQ* | #emph[Next.js, React, FastAPI, Supabase, Claude/Gemini AI]
+    #grid(
+      columns: (1fr, auto),
+      align(left)[*GradeIQ* | #emph[Next.js, React, FastAPI, Supabase, Claude/Gemini AI]],
+      align(right)[October 2025]
+    )
     #v(-0.2em)
-    _AI-powered grading platform automating academic assessment - 3rd place at Teachathon (2-week sprint)_ #h(1fr) October 2025
+    _AI-powered grading platform automating academic assessment - 3rd place at Teachathon (2-week sprint)_
     #v(-0.4em)
     #set par(leading: 0.6em)
     #set list(indent: 0.5em)
@@ -138,9 +170,13 @@
   ]
 
   #block[
-    *Samantha OS Assistant* | #emph[Python, OpenAI API, Linux System Programming]
+    #grid(
+      columns: (1fr, auto),
+      align(left)[*Samantha OS Assistant* | #emph[Python, OpenAI API, Linux System Programming]],
+      align(right)[October 2025]
+    )
     #v(-0.2em)
-    _1st place at OpenEuler Challenge - natural language CLI assistant for Linux system operations_ #h(1fr) October 2025
+    _1st place at OpenEuler Challenge - natural language CLI assistant for Linux system operations_
     #v(-0.4em)
     #set par(leading: 0.6em)
     #set list(indent: 0.5em)
