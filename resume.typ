@@ -54,7 +54,7 @@
   grid(
     columns: (70%, 30%),
     align(left)[*#institution* \ #emph[#degree, #major]],
-    align(right)[*#location* \ #period_worked(start-date, end-date)]
+    align(right)[*#period_worked(start-date, end-date)* \ #emph(location)]
   )
   v(-0.2em)
   if body != [] {
@@ -194,7 +194,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*Optiver Trading Challenge* | #emph[Python, BERT, NLP, Algorithmic Trading]],
-      align(right)[Nov 2025]
+      align(right)[*Nov 2025*]
     )
     #v(-0.5em)
     _2nd on leaderboard at Hacktheburgh algorithmic trading competition (30+ teams)_
@@ -209,7 +209,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*World on Fire* | #emph[Next.js, React, FastAPI, Supabase, Leaflet]],
-      align(right)[Nov 2025]
+      align(right)[*Nov 2025*]
     )
     #v(-0.5em)
     _Real-time global news heatmap visualizing breaking news across 100+ cities (24 hour hackathon project)_
@@ -225,7 +225,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*GradeIQ* | #emph[Next.js, React, FastAPI, Supabase, Claude/Gemini AI]],
-      align(right)[Oct 2025]
+      align(right)[*Oct 2025*]
     )
     #v(-0.5em)
     _AI-powered grading platform automating academic assessment - 3rd place at Teachathon (2-week sprint)_
@@ -241,7 +241,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*Samantha OS Assistant* | #emph[Python, OpenAI API, Linux System Programming]],
-      align(right)[Oct 2025]
+      align(right)[*Oct 2025*]
     )
     #v(-0.5em)
     _1st place at OpenEuler Challenge - natural language CLI assistant for Linux system operations_
