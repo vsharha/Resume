@@ -162,7 +162,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*First Place, OpenEuler Challenge*],
-      align(right)[*October 2025*]
+      align(right)[*Oct 2025*]
     )
     #v(-0.5em)
     #grid(
@@ -177,7 +177,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*Third Place, Teachathon*],
-      align(right)[*October 2025*]
+      align(right)[*Oct 2025*]
     )
     #v(-0.5em)
     #grid(
@@ -194,7 +194,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*Optiver Trading Challenge* | #emph[Python, BERT, NLP, Algorithmic Trading]],
-      align(right)[November 2025]
+      align(right)[Nov 2025]
     )
     #v(-0.5em)
     _2nd on leaderboard at Hacktheburgh algorithmic trading competition (30+ teams)_
@@ -209,7 +209,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*World on Fire* | #emph[Next.js, React, FastAPI, Supabase, Leaflet]],
-      align(right)[November 2025]
+      align(right)[Nov 2025]
     )
     #v(-0.5em)
     _Real-time global news heatmap visualizing breaking news across 100+ cities (24 hour hackathon project)_
@@ -225,7 +225,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*GradeIQ* | #emph[Next.js, React, FastAPI, Supabase, Claude/Gemini AI]],
-      align(right)[October 2025]
+      align(right)[Oct 2025]
     )
     #v(-0.5em)
     _AI-powered grading platform automating academic assessment - 3rd place at Teachathon (2-week sprint)_
@@ -241,7 +241,7 @@
     #grid(
       columns: (1fr, auto),
       align(left)[*Samantha OS Assistant* | #emph[Python, OpenAI API, Linux System Programming]],
-      align(right)[October 2025]
+      align(right)[Oct 2025]
     )
     #v(-0.5em)
     _1st place at OpenEuler Challenge - natural language CLI assistant for Linux system operations_
@@ -256,8 +256,8 @@
 #custom-title("Technical Skills")[
   #skills()[
     - *Languages:* Python, JavaScript/TypeScript, Go, Java, C++, SQL, Bash
-    - *Frameworks & Libraries:* React, Next.js, FastAPI, Tailwind CSS, Redux, Supabase, JWT/Auth, Playwright, Selenium
+    - *Frameworks & Libraries:* HTML5, CSS3, React, Next.js, FastAPI, Tailwind CSS, Redux, Supabase, JWT/Auth, Playwright, Selenium
     - *Tools & Platforms:* Git, Linux, Docker, REST APIs, CI/CD, Cloudflare, OpenAI/Anthropic APIs
-    - *Web Technologies:* HTML5, CSS3, Responsive Design, REST, WebSockets
+    - *Web Technologies:* Responsive Design, REST, WebSockets
   ]
 ]
