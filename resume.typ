@@ -1,11 +1,14 @@
-#import "@preview/simple-technical-resume:0.1.1": *
-
 #let name = "Viktor Sharha"
 #let phone = "+44 7771 432 765"
 #let email = "vsharha07@gmail.com"
 #let github = "vsharha"
 #let linkedin = "vsharha"
 #let personal-site = "viktorsharha.com"
+
+#set document(
+  title: "Viktor Sharha (Resume)",
+  author: "Viktor Sharha"
+)
 
 #set page(
   paper: "a4",
@@ -73,6 +76,18 @@
     v(-0.4em)
     set par(leading: 0.6em)
     set list(indent: 0.5em)
+    body
+  }
+}
+
+#let skills(body) = {
+  if body != [] {
+    set par(leading: 0.6em)
+    set list(
+      body-indent: 0.1em,
+      indent: 0em,
+      marker: []
+    )
     body
   }
 }
