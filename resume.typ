@@ -20,9 +20,61 @@
 )
 
 #let custom-title(title, body) = {
+  v(-0.3em)
   [= #title]
   pad(left: 0.15in)[#body]
   v(-0.5em)
+}
+
+#let period_worked(start-date, end-date) = {
+  assert.eq(type(start-date), datetime)
+  assert(type(end-date) == datetime or type(end-date) == str)
+
+  if type(end-date) == str and end-date == "Present" {
+    end-date = datetime.today()
+  }
+
+  return [
+      #start-date.display("[month repr:short] [year]") --
+      #if (
+        (end-date.month() == datetime.today().month()) and
+        (end-date.year() == datetime.today().year())
+      ) [
+        Present
+      ] else [
+        #end-date.display("[month repr:short] [year]")
+      ]
+  ]
+}
+
+#let education-heading(institution, location, degree, major, start-date, end-date, body) = {
+  grid(
+    columns: (70%, 30%),
+    align(left)[*#institution* \ #emph[#degree, #major]],
+    align(right)[*#location* \ #period_worked(start-date, end-date)]
+  )
+  v(-0.2em)
+  if body != [] {
+    v(-0.4em)
+    set par(leading: 0.6em)
+    set list(indent: 0.5em)
+    body
+  }
+}
+
+#let work-heading(company, title, location, start-date, end-date, body) = {
+  grid(
+    columns: (1fr, 1fr),
+    align(left)[*#title* \ #emph[#company]],
+    align(right)[*#period_worked(start-date, end-date)* \ #emph(location)]
+  )
+  v(-0.2em)
+  if body != [] {
+    v(-0.4em)
+    set par(leading: 0.6em)
+    set list(indent: 0.5em)
+    body
+  }
 }
 
 #show heading.where(level: 1): it => block(width: 100%)[
@@ -97,7 +149,7 @@
       align(left)[*First Place, OpenEuler Challenge*],
       align(right)[*October 2025*]
     )
-    #v(-0.2em)
+    #v(-0.5em)
     #grid(
       columns: (1fr, auto),
       align(left)[_Won competitive university-wide hackathon with Samantha OS Assistant_],
@@ -112,7 +164,7 @@
       align(left)[*Third Place, Teachathon*],
       align(right)[*October 2025*]
     )
-    #v(-0.2em)
+    #v(-0.5em)
     #grid(
       columns: (1fr, auto),
       align(left)[_Placed 3rd in educational technology competition with GradeIQ, an AI-powered grading platform_],
@@ -129,7 +181,7 @@
       align(left)[*Optiver Trading Challenge* | #emph[Python, BERT, NLP, Algorithmic Trading]],
       align(right)[November 2025]
     )
-    #v(-0.2em)
+    #v(-0.5em)
     _2nd on leaderboard at Hacktheburgh algorithmic trading competition (30+ teams)_
     #v(-0.4em)
     #set par(leading: 0.6em)
@@ -144,7 +196,7 @@
       align(left)[*World on Fire* | #emph[Next.js, React, FastAPI, Supabase, Leaflet]],
       align(right)[November 2025]
     )
-    #v(-0.2em)
+    #v(-0.5em)
     _Real-time global news heatmap visualizing breaking news across 100+ cities (24 hour hackathon project)_
     #v(-0.4em)
     #set par(leading: 0.6em)
@@ -160,7 +212,7 @@
       align(left)[*GradeIQ* | #emph[Next.js, React, FastAPI, Supabase, Claude/Gemini AI]],
       align(right)[October 2025]
     )
-    #v(-0.2em)
+    #v(-0.5em)
     _AI-powered grading platform automating academic assessment - 3rd place at Teachathon (2-week sprint)_
     #v(-0.4em)
     #set par(leading: 0.6em)
@@ -176,7 +228,7 @@
       align(left)[*Samantha OS Assistant* | #emph[Python, OpenAI API, Linux System Programming]],
       align(right)[October 2025]
     )
-    #v(-0.2em)
+    #v(-0.5em)
     _1st place at OpenEuler Challenge - natural language CLI assistant for Linux system operations_
     #v(-0.4em)
     #set par(leading: 0.6em)
