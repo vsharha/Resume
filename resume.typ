@@ -152,7 +152,7 @@
     "Present"
   )[
     - Co-founded automotive service business, scaling to 50+ monthly appointments while managing all technology operations and digital infrastructure
-    - Built and deployed "Zenparse" - AI-powered document processing system handling 500+ invoices/receipts annually with 98% accuracy, reducing monthly bookkeeping time by 95% (5 hours to 15 minutes)
+    - Built and deployed Zenparse - AI-powered document processing system handling 500+ invoices/receipts annually with 98% accuracy, reducing monthly bookkeeping time by 95% (5 hours to 15 minutes)
     - Spearheading the commercialization of Zenparse as B2B SaaS product targeting small businesses with similar accounting automation needs
   ]
 ]
