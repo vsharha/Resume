@@ -23,11 +23,10 @@ jobs:
               with:
                   fetch-depth: 0
 
-            - name: Build PDF (LaTeX)
-              uses: xu-cheng/latex-action@v3
+            - name: Build PDF (Typst)
+              uses: lvignoli/typst-action@main
               with:
-                  root_file: resume.tex
-                  args: -pdf -interaction=nonstopmode -halt-on-error
+                  source_file: resume.typ
 
             # - name: Commit resume.pdf to repo root
             #   if: github.event_name != 'pull_request'
