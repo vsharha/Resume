@@ -68,7 +68,7 @@
 #let work-heading(company, title, location, start-date, end-date, body) = {
   grid(
     columns: (1fr, 1fr),
-    align(left)[*#title* \ #emph[#company]],
+    align(left)[*#company* \ #emph[#title]],
     align(right)[*#period_worked(start-date, end-date)* \ #emph(location)]
   )
   v(-0.2em)
