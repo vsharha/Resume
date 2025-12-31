@@ -78,8 +78,8 @@
 
 #custom-title("Experience")[
   #work-heading(
-    "Co-Founder & Operations",
     "VDrive Edinburgh",
+    "Co-Founder & Operations",
     "Edinburgh, Scotland",
     datetime(year: 2025, month: 6, day: 1),
     "Present"
@@ -93,14 +93,14 @@
 #custom-title("Awards & Achievements")[
   #block[
     #grid(
-      columns: (1fr, 1fr),
+      columns: (1fr, auto),
       align(left)[*First Place, OpenEuler Challenge*],
       align(right)[*October 2025*]
     )
     #v(-0.2em)
     #grid(
-      columns: (1fr, 1fr),
-      align(left)[Won competitive university-wide hackathon with Samantha OS Assistant],
+      columns: (1fr, auto),
+      align(left)[_Won competitive university-wide hackathon with Samantha OS Assistant_],
       align(right)[_Edinburgh, Scotland_]
     )
     #v(-0.2em)
@@ -108,14 +108,14 @@
 
   #block[
     #grid(
-      columns: (1fr, 1fr),
+      columns: (1fr, auto),
       align(left)[*Third Place, Teachathon*],
       align(right)[*October 2025*]
     )
     #v(-0.2em)
     #grid(
-      columns: (1fr, 1fr),
-      align(left)[Placed 3rd in educational technology competition with GradeIQ, an AI-powered grading platform],
+      columns: (1fr, auto),
+      align(left)[_Placed 3rd in educational technology competition with GradeIQ, an AI-powered grading platform_],
       align(right)[_Edinburgh, Scotland_]
     )
     #v(-0.2em)
