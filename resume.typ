@@ -14,7 +14,7 @@
 
 #set text(
   font: "New Computer Modern",
-  size: 11pt,
+  size: 10pt,
   lang: "en",
   ligatures: false
 )
@@ -100,9 +100,9 @@
     let items = (
       phone,
       underline(link("mailto:" + email)[#email]),
-      underline(link("https://" + personal-site)[#personal-site]),
       underline(link("https://linkedin.com/in/" + linkedin)[linkedin.com/in/#linkedin]),
       underline(link("https://github.com/" + github)[github.com/#github]),
+      underline(link("https://" + personal-site)[#personal-site]),
     )
     items.filter(x => x != none).join([
       #show "|": sep => {
