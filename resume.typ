@@ -255,9 +255,9 @@
 
 #custom-title("Technical Skills")[
   #skills()[
-    - *Languages:* Python, JavaScript/TypeScript, Go, Java, C++, SQL, Bash
-    - *Frameworks & Libraries:* HTML5, CSS3, React, Next.js, FastAPI, Tailwind CSS, Redux, Supabase, JWT/Auth, Playwright, Selenium
-    - *Tools & Platforms:* Git, Linux, Docker, REST APIs, CI/CD, Cloudflare, OpenAI/Anthropic APIs
-    - *Web Technologies:* Responsive Design, REST, WebSockets
+    - *Languages:* HTML5, CSS3, Python, JavaScript/TypeScript, Go, Java, C++, SQL, Bash
+    - *Frameworks & Libraries:* Node.js, React, Next.js, FastAPI, Tailwind CSS, Redux, Playwright, Selenium
+    - *Tools & Platforms:* Git, Linux, Docker, REST APIs, CI/CD, Cloudflare, OpenAI/Anthropic APIs, Supabase
+    - *Web Technologies:* Responsive Design, REST, WebSockets, JWT/Auth
   ]
 ]
